@@ -1,0 +1,3 @@
+# Usage 
+- Automatic javascirpt code ...
+- ledangquangdangquang

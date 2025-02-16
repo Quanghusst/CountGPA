@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count GPA</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon"
+        href="https://media.discordapp.net/attachments/1253996261854547989/1329820363634376774/ava_tron.png?ex=67b29f79&is=67b14df9&hm=6040dfc1ae9d8ca44ce1e6bf2736a69917726c5d1a0e41d66d166101feb8272d&=&format=webp&quality=lossless&width=594&height=594"
+        type="image/png">
+</head>
+
+<body>
+    <h2>Nhập Dữ Liệu Học Phần <a href="https://dt-ctt.hust.edu.vn/Students/CoursesRegister.aspx" target="_blank">(copy
+            các môn kỳ này)</a> (hoặc không cần)</h2>
+    <textarea id="inputData" placeholder="Nhập dữ liệu vào đây..."></textarea>
+    <br>
+    <button onclick="processData()">Hiển thị</button>
+
+    <h2>Dữ Liệu Học Phần</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Mã Học Phần</th>
+                <th>Tên Học Phần</th>
+                <th>Số Tín Chỉ</th>
+                <th>Trọng số QT</th>
+                <th>QT</th>
+                <th>CK</th>
+                <th>Đổi điểm hệ 10</th>
+                <th>Đổi điểm chữ</th>
+                <th>Đổi điểm hệ 4</th>
+                <th>Xóa</th>
+            </tr>
+        </thead>
+        <tbody id="outputTable">
+        </tbody>
+        <tfoot>
+            <tr class="add-row" onclick="addEmptyRow()">
+                <td colspan="10">+ THÊM HÀNG</td>
+            </tr>
+        </tfoot>
+    </table>
+    <h3>Tổng số tín: <span id="totalCredits">0</span></h3>
+    <h3>GPA: <span id="gpa">0.00</span></h3>
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>
