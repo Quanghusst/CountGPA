@@ -84,11 +84,13 @@ function processData() {
 
     lines.forEach(line => {
         let parts = line.split("\t"); // Tách theo tab
-        if (parts.length >= 6) { // Đảm bảo có đủ dữ liệu
-            let code = parts[0].trim();
-            let name = parts[1].trim();
-            let credits = parts[4].trim();
-
+        if (parts.length >= 4) { // Đảm bảo có đủ dữ liệu
+            // let code = parts[0].trim();
+            // let name = parts[1].trim();
+            // let credits = parts[4].trim();
+            let code = parts[1].trim();
+            let name = parts[2].trim();
+            let credits = parts[3].trim();
             if (credits !== "0") { // Bỏ qua các môn có số tín chỉ = 0
                 let row = document.createElement("tr");
                 row.innerHTML = `
